@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Feelr - Get in touch with our team to discuss your business needs and solutions.">
+    <meta name="keywords" content="contact, support, email, phone, inquiry">
+    
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="canonical" href="https://s77023209-ui.github.io/Feelr/pages/contact.html">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    
+    <title>Contact - Feelr</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <svg viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" fill="#007bff" stroke="#0056b3" stroke-width="2"/>
+                        <text x="20" y="28" font-size="20" font-weight="bold" text-anchor="middle" fill="white">F</text>
+                    </svg>
+                    <span>Feelr</span>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html" class="active cta-button">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Let's discuss your business needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Have questions? Our team is here to help. Reach out using any of the methods below.</p>
+
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Business Avenue<br>Tech City, TC 12345<br>United States</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:hello@feelr.com">hello@feelr.com</a></p>
+                        <p><a href="mailto:support@feelr.com">support@feelr.com</a></p>
+                        <p><a href="mailto:sales@feelr.com">sales@feelr.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:+12345678900">+1 (234) 567-8900</a></p>
+                        <p><a href="tel:+12345678901">+1 (234) 567-8901</a> (Support)</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>⏰ Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM (EST)<br>
+                        Saturday - Sunday: 10:00 AM - 4:00 PM (EST)<br>
+                        <em>* Emergency support available 24/7</em></p>
+                    </div>
+
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="services">Services Information</option>
+                                <option value="pricing">Pricing Question</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">Send Message</button>
+                        <p class="form-note">* Required fields</p>
+                    </form>
+                    <div id="formMessage" class="form-message" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Still Have Questions?</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What's the typical response time?</h3>
+                    <p>We aim to respond to all inquiries within 24 hours during business hours. Premium customers get priority support.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer consultations?</h3>
+                    <p>Yes! We offer free 30-minute consultations to discuss your business needs and how we can help.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What about emergency support?</h3>
+                    <p>Emergency support is available 24/7 for our Professional and Enterprise clients.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can we get started?</h3>
+                    <p>Simply fill out the form above or call us directly. We'll schedule an initial consultation at your convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Feelr</h4>
+                    <p>Empowering businesses with innovative solutions and cutting-edge technology since 2009.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@feelr.com">hello@feelr.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-8900</a></li>
+                        <li>123 Business Ave, Tech City, TC 12345</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                        <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                        <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Feelr. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
